@@ -4,6 +4,7 @@ function newItem() {
     // 1. adding a new item to the list of items:
     let li = $('<li></li>');
     let inputValue = $('#input').val();
+    let text = document.createTextNode(inputValue);
     li.append(inputValue);
 
     if (inputValue === '') {
